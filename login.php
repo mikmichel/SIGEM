@@ -9,10 +9,15 @@
   }else{
     $erro = "";
   }
-
-  require_once("template/header.php");
 ?>
+ <!-- ================================================================================================= -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <?php require_once('template/header.php');?>
   </head>
+  
   <body>
     <div class="page login-page">
       <div class="container align-items-center">
