@@ -1231,6 +1231,9 @@ footer.main-footer p {
 label {
   font-size: .9rem;
 }
+.forms .forms-control .label_radio{
+  font-size: .9em;
+}
 
 .form-control {
   height: calc(2.4rem + 2px);
@@ -1282,6 +1285,12 @@ textarea.form-control {
 
 select.form-control {
   font-weight: 300;
+}
+
+select.form-control.select_selecionado {
+  color: #999;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85em;
 }
 
 select.form-control[size], select.form-control[multiple] {
@@ -1526,7 +1535,7 @@ button {
 
 /* Essa #id formata o tamanho da fonte do placeholder DATA */
   #data_nasc{
-    font-size: 0.90em;
+    font-size: 1rem;
   }
 
   .forms p {

@@ -60,23 +60,28 @@ if(($_SESSION['login']) == null and  ($_SESSION['senha']) == null)
                     <div class="form-group row">
                       <label class="col-sm-2 form-control-label">Nome</label>
                       <div class="col-sm-8">
-                        <input type="text" placeholder="Nome" class="form-control"/>
+                        <input type="text" placeholder="Nome" class="form-control">
                       </div>
 
                       <!-- DADOS DE NASCIMENTO -->
                       <div class="col-sm-12">
                         <div class="row">
-                          <label class="col-sm-2 form-control-label">Data de Nasc.</label>
+                          <label class="col-sm-2 form-control-label">Dados de Nasc.</label>
                           <div class="col-sm-3">
-                            <input type="date" id="data_nasc"  
-                              class="form-control" style="text-align:center" value="1990-01-01"/>                              
-                          </div>                          
+                            <div class="input-group date">
+                              <input type="text" class="form-control" id="data_nasc" 
+                                data-mask="00/00/0000">
+                                <div class="input-group-append">
+                                  <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                </div>
+                            </div>
+                          </div>                           
                           <div class="col-sm-3">
                             <input type="text" placeholder="Cidade onde nasceu" class="form-control"/>                              
                           </div>
                           <div class="col-sm-2">
-                            <select name="estado" class="form-control">
-                              <option value="estado">Estado</option>
+                            <select name="estado" class="form-control select_selecionado">
+                              <option value=""  disabled selected hidden>Estado</option>
                               <option value="AC">AC</option>
                               <option value="AL">AL</option>
                               <option value="AM">AM</option>
@@ -123,14 +128,16 @@ if(($_SESSION['login']) == null and  ($_SESSION['senha']) == null)
                         <div class="row">
                             <label class="col-sm-2 form-control-label">Sexo</label>
                             <div class="col-sm-2">
-                              <input type="radio" value="M" name="optradio"/> Masculino                                                                                     
+                              <input type="radio" value="M" name="optradio"/>
+                                <label class="label_radio_sexo"> &nbspMasculino </label>                                                                                     
                             </div>
-                            <div class="col-sm-2">
-                              <input type="radio" value="F" name="optradio"/> Feminino
+                            <div class="col-sm-2 radio_sexo">
+                              <input type="radio" value="F" name="optradio"/>
+                                <label class="label_radio"> &nbspFeminino </label>
                             </div>
                             <div class="col-sm-3">
-                              <select name="estado" class="form-control">
-                                <option value="estado">Estado Civil</option>
+                              <select name="estado" class="form-control select_selecionado">
+                                <option value=""  disabled selected hidden>Estado Civil</option>
                                 <option value="0">Solteiro</option>
                                 <option value="1">Casado(a)</option>
                                 <option value="2">Separado(a)</option>
@@ -148,7 +155,7 @@ if(($_SESSION['login']) == null and  ($_SESSION['senha']) == null)
                                 <input type="text" placeholder="Telefone: (00)00000-0000" data-mask="(00)00000-0000" class="form-control"/>
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" placeholder="Email: idusuário@provedor.com" class="form-control"/>
+                                <input type="text" placeholder="Email: login@provedor.com" class="form-control"/>
                             </div> 
                             </div>
                           </div>
@@ -172,19 +179,19 @@ if(($_SESSION['login']) == null and  ($_SESSION['senha']) == null)
                             <label class="form-control-label col-sm-2">Cidade</label>
                             <div class="col-sm-5">
                               <input type="text" placeholder="Cidade" class="form-control"/>
-                            </div>                        
+                            </div>                            
                             <div class="col-sm-3">
-                              <input type="text" placeholder="Bairro" class="form-control"/>
-                            </div>                          
+                              <input type="text" placeholder="CEP: 00000-000" data-mask="00000-000" class="form-control"/>                              
+                            </div>                                                   
                           </div>
                           <div class="row">
-                            <label class="form-control-label col-sm-2">CEP</label>
-                            <div class="col-sm-3">
-                              <input type="text" placeholder="00000-000" data-mask="00000-000" class="form-control"/>                              
-                            </div>                        
+                          <label class="form-control-label col-sm-2">Bairro</label>
                             <div class="col-sm-5">
-                              <select name="estado" class="form-control">
-                                <option value="estado">Estado</option>
+                              <input type="text" placeholder="Bairro" class="form-control"/>
+                            </div>                                                     
+                            <div class="col-sm-3">
+                              <select name="estado" class="form-control select_selecionado">
+                                <option value=""  disabled selected hidden>Estado</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -227,17 +234,26 @@ if(($_SESSION['login']) == null and  ($_SESSION['senha']) == null)
                         <div class="row">
                           <label class="col-sm-2 form-control-label">RG.</label>
                               <div class="col-sm-3">
-                                <input type="text" placeholder="Número" class="form-control"/>                              
+                                <input type="text" pattern="[0-9]+$"
+                                       title="Digite apenas números"
+                                       placeholder="Número" id="numerorg" class="form-control"/>                              
                               </div>
                               <div class="col-sm-2">
                                 <input type="text" id="rgexp_placeholder" placeholder="Orgão Expedidor" class="form-control"/>                              
                               </div>
                               <div class="col-sm-3">
-                                <input type="date" id="data_expedicao" class="form-control" value="1990-01-01" />                              
-                              </div>                        
-                        </div>     
-                      </div>
+                                <div class="input-group date">
+                                  <input type="text" class="form-control" id="data_expedicao" 
+                                    data-mask="00/00/0000" >
+                                    <div class="input-group-append">
+                                      <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>                        
+                      </div>     
                     </div>
+                    
                     <!-- FIM CAMPOS DOCUMENTOS -->
 
                     <div class="line"></div>
@@ -257,6 +273,23 @@ if(($_SESSION['login']) == null and  ($_SESSION['senha']) == null)
     <!-- FOOTER -->
     <?php require_once('template/footer.php');?>
 
+    <script type="text/javascript">
+    // ================= Placeholder campos DATA.==================
+			$('#data_expedicao,#data_nasc').datepicker({	
+				format: "dd/mm/yyyy",	
+				language: "pt-BR",
+				endDate: "3d"
+      });
+      $('#data_expedicao').attr("placeholder","Data de expedição");
+      $('#data_nasc').attr("placeholder","Data de nascimento");
+      //===========================================================
+      
+      var input = document.getElementById('numerorg');
+      input.oninvalid = function(event) {
+        event.target.
+        event.target.setCustomValidity('Digite apenas números');
+      }
+		</script>
   </body>
   
 </html>
