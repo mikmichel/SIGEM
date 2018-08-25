@@ -1,4 +1,5 @@
-# Sistema de Gerenciamento Estudantil Municipal (SIGEM).
+# Sistema de Gerenciamento Estudantil Municipal (SIGEM).  
+![](https://img.shields.io/badge/php-v7-green.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/css-v3-blue.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/html-v5-orange.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/jQuery-v3.3.1-blue.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/javascript-developer-pink.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/Bootstrap-v4-purple.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/PostgreSQL-v10-blue.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/ViaCep-API-green.svg?longCache=true&style=flat-square) ![](https://img.shields.io/badge/BootstrapDatapicker-v1.6.4-purple.svg?longCache=true&style=flat-square)
 
 ## Descrição do sistema
 O SIGEM é um projeto direcionado ao auxílio na execução das tarefas do dia a dia na gestão das escolas do município de Caicó - RN, ajudando os profissionais de educação a executar tarefas de forma eficiente.
