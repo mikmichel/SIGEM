@@ -18,6 +18,13 @@ https://bootstrapious.com/p/bootstrap-4-dashboard
   font-weight: 700;
 }
 
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
 .text-small {
   font-size: 0.9rem;
 }
@@ -1536,6 +1543,11 @@ button {
 /* Essa #id formata o tamanho da fonte do placeholder DATA */
   #data_nasc{
     font-size: 1rem;
+  }
+
+  /* Essa #id formata o tamanho da fonte do placeholder RG Data expedição */
+  #rgexp_placeholder{
+    font-size: .90em;
   }
 
   .forms p {

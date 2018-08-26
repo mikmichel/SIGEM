@@ -72,4 +72,12 @@ INSERT INTO public.login_teste(
 	login, senha, nome, funcao)
 	VALUES ('admin', 'admin', 'Administrador', 'Administrador do siatemas');
 ```
+## Equipe do projeto
+        Nome                  |        email
+------------------------------|-----------------------------------
+André Gouveia Gurgel          | andreggurgelufrn@gmail.com
+Emanuel Costa da Silva        | emancos@gmail.com
+Henrique Hipólito Dantas      | henriquehipolitodantas@gmail.com
+Michael Angelo Alves da Silva | mikmichel@gmail.com
+Sheydson Carlos Santos Cortez |  sheydsoncortez@gmail.com
 

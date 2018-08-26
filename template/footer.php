@@ -7,7 +7,10 @@
               <p>Mateus Viana</p>
             </div>
             <div class="col-sm-6 text-right copyrights text-center">
-              <p>Gestão de Projetos de Software <a href="https://sigaa.ufrn.br/sigaa/public/curso/  portal.jsf?id=7191770&nivel=G" class="external">BSI | CERES/CAICÓ</a></p>
+              <p>Design by <a href="https://bootstrapious.com" class="external">Bootstrapious</a></p>
+                <!-- Please do not remove the backlink to us unless you support further theme's 
+                development at https://bootstrapious.com/donate. It is part of the license conditions 
+                and it helps me to run Bootstrapious. Thank you for understanding :)-->
             </div>
           </div>
         </div>
