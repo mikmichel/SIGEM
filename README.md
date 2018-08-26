@@ -39,7 +39,7 @@ Para o desenvolvimento e utilização do SIGEM foi utilizado o XAMPP(LAMPP no Li
 - [Windows and Linux](http://www.techken.in/linux/install-postgresql-10-windows-10-linux/).
 - [Mac OS](https://coolestguidesontheplanet.com/installing-postgresql-database-os-x-10-9-mavericks-configure-phppgadmin/).
 ### Habilitar PostgresSQL XAMP:
-- [Windows](http://subhra.me/install-postgresql-in-xampp-on-windows-and-integrate-phppgadmin/).
+- [Windows](https://santiagobambui.wordpress.com/2013/02/06/ativando-o-postgresql-no-xampp/).
 - [linux(LAMPP)](http://desarrollomaya.blogspot.com/2013/04/preparar-apache-de-xampp-para-acceder.html)
 - [Mac OS (MAMP)](https://stackoverflow.com/questions/26003058/how-to-enable-postgresql-in-xampp-on-mac-os).
 
